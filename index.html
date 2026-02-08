@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para mi ojona hermosa</title>
+
+<style>
+    body {
+        background-color: #ffe6f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #ff0066;
+    }
+
+    .mensaje {
+        background-color: white;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .galeria img {
+        width: 220px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+        transform: scale(1.1);
+    }
+
+    .corazon {
+        font-size: 70px;
+        animation: latir 1s infinite;
+    }
+
+    @keyframes latir {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+    }
+
+    .boton {
+        background-color: #ff0066;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 15px;
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    #sorpresa {
+        display: none;
+        margin-top: 20px;
+        font-size: 22px;
+        color: #d1005c;
+        font-weight: bold;
+    }
+
+</style>
+
+<script>
+    function mostrarMensaje() {
+        document.getElementById("sorpresa").style.display = "block";
+    }
+</script>
+
+</head>
+
+<body>
+
+<!-- Canción de fondo -->
+<audio autoplay loop>
+  <source src="https://dl.dropboxusercontent.com/s/1q4n8b0y7r5l5q9/RobarteUnBeso.mp3" type="audio/mpeg">
+</audio>
+
+<div class="contenedor">
+
+    <div class="corazon">❤️</div>
+
+    <h1>Para mi ojona hermosa</h1>
+
+    <div class="mensaje">
+        <p>
+            Mi amor <b>Jenyfer</b> 💖  
+        </p>
+
+        <p>
+            Desde que llegaste a mi vida todo tiene más color,  
+            más alegría y más sentido.
+        </p>
+
+        <p>
+            Eres mi lugar favorito,  
+            mi sonrisa diaria,  
+            mi pensamiento más bonito.
+        </p>
+
+        <p>
+            Gracias por cada momento juntos,  
+            por tu amor, tu paciencia y tu ternura.
+        </p>
+
+        <p>
+            No hay nada en este mundo que quiera más  
+            que seguir caminando a tu lado.
+        </p>
+
+        <h2>¿Quieres ser mi San Valentín?</h2>
+
+        <button class="boton" onclick="mostrarMensaje()">
+            Toca aquí mi amor
+        </button>
+
+        <div id="sorpresa">
+            💘 ¡Sabía que dirías que sí! 💘 <br>
+            Te amo demasiado, mi ojona hermosa
+        </div>
+    </div>
+
+    <h2>Nuestros recuerdos juntos</h2>
+
+    <div class="galeria">
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+        <img src="foto3.jpg">
+        <img src="foto4.jpg">
+        <img src="foto5.jpg">
+    </div>
+
+    <div class="mensaje">
+        <p>
+            Quiero seguir creando recuerdos contigo,  
+            seguir riendo juntos,  
+            seguir abrazándote y cuidándote.
+        </p>
+
+        <p>
+            Eres lo más bonito que me ha regalado la vida.
+        </p>
+
+        <h3>Con todo mi amor:</h3>
+        <h2>❤️ Deiner ❤️</h2>
+    </div>
+
+</div>
+
+</body>
+</html>
